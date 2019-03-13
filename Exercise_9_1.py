@@ -1,0 +1,11 @@
+def open_and_print():
+    """ Read words.txt and prints only the words with more than 20 characters (not counting whitespace).
+    """
+    fin = open('words.txt')
+    for line in fin:
+        word = line.strip()
+        if len(word) > 20:
+            print(word)
+
+
+open_and_print()
